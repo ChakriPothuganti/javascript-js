@@ -35,7 +35,31 @@ let details ={
 }
 
 const myFunction = function(){
-    console.log('Hello World');
+    //console.log('Hello World');
 }
 
-console.log(typeof bigNumber) // bigint
+//console.log(typeof bigNumber) // bigint
+
+// -----------------Memory---------------
+// Stack(Primitive),Heap(Non-Primitive)
+
+ let firstName = "Chakri"
+ let lastName = firstName
+
+ lastName = "cherry";
+
+ 
+ console.log(firstName)
+ console.log(lastName)
+
+ let userOne = {
+    email : "userOne@gmail.com",
+    upi : "userOne@ybl",
+ }
+
+ let userTwo = userOne
+
+ userTwo.email = "userTwo@gmail.com"
+
+ console.log(userOne.email)
+ console.log(userTwo.email)
